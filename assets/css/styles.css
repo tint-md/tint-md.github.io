@@ -519,12 +519,12 @@ progress {
   text-transform: uppercase;
 }
 
-.blockquote, blockquote {
+.blockquote {
   margin-bottom: 1rem;
   font-size: 1.25rem;
 }
 
-.blockquote > :last-child, blockquote > :last-child {
+.blockquote > :last-child {
   margin-bottom: 0;
 }
 
@@ -12065,6 +12065,27 @@ textarea.form-control-lg {
 
 .highlight .gi {
   color: #a6e22e;
+}
+
+blockquote {
+  background-color: #313131;
+  border-left: 5px solid #818181;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "“" "”" "‘" "’";
+}
+
+blockquote:before {
+  color: #818181;
+  content: open-quote;
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
 }
 
 img {
